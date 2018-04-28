@@ -1,0 +1,12 @@
+[package]
+name = "hal4_resolver"
+version = "0.1.0"
+authors = ["m_101 <m101.sec@gmail.com>"]
+
+[dependencies]
+# custom
+bingrep = { path = "../bingrep" }
+
+# disassembler
+capstone = "0.3"
+
