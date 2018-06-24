@@ -7,6 +7,10 @@ authors = ["user"]
 byteorder = "1"
 
 [target.'cfg(windows)'.dependencies]
-winapi = { version = "0.3", features = ["winuser"] }
-kernel32-sys = "0.2.2"
+#winapi = { version = "0.3", features = ["winuser", "processthreadsapi", "securitybaseapi"] }
+winapi = { git = "https://github.com/retep998/winapi-rs/", rev = "a7a82aa", features = [ "impl-default", "winuser", "processthreadsapi", "securitybaseapi", "minwindef", "winbase", "winerror"] }
+kernel32-sys = "0.2"
 psapi-sys = "0.1.1"
+
+
+
